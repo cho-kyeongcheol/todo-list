@@ -107,7 +107,15 @@ app.listen(port, () => {
 	console.log(`Example app listening at http://localhost:${port}`)
 })
 ```
+백엔드 서버 실행
 ```
+* backend 디렉토리로 이동 후 실행
 node app.js
+```
+
+프론트엔드 서버 실행
+```
+* frontend 디렉토리로 이동 후 실행
+npm start
 ```
 
