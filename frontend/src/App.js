@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
 
-function App() {
+
+const App = () => {
+
+  const [text, setText] = useState('333')
+  const [board, setBoard] = useState([])
+
+  const enrollPost = () => {  
+    setBoard([...board, text])
+  }
+
+  const resetPost = () => {  
+    setBoard([])
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>todo list</h1>
+      <input onChange={(e) => {setText(e.target.value)}} type="text" value={text}></input>
+      <button onClick={enrollPost}>등록</button>
+      <button onClick={resetPost}>초기화</button>
+      {
+        board.map((item, idx) => {
+          return (
+            <div>
+              {item}
+            </div>
+          )
+        })
+      }
     </div>
   );
 }

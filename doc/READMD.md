@@ -118,4 +118,37 @@ node app.js
 * frontend 디렉토리로 이동 후 실행
 npm start
 ```
+프론트엔드의 client-side rendering
+```
+1. html 껍데기만 보낸 다음에 후에 그려진다
+2. public/index.html
+3. src/index.js
+4. src/App.js
+```
+jsx 개념
+```
+javascript xml
+```
+arrow function 개념
+```
+function a(){
+}
 
+// es6
+const a = () => {
+}
+```
+
+state 개념
+```
+useState
+```
+
+비구조 할당 개념
+```
+찾아보기
+```
+spread 문법
+```
+...
+```
