@@ -152,3 +152,19 @@ spread 문법
 ```
 ...
 ```
+json 개념
+```
+모든 웹 언어에서 공통적으로 사용하고있는 데이터 타입
+{"key": "value"}
+['value', 'value']
+
+ex)
+{
+  "username": "john",
+  "age": 20,
+  "family": [
+     {"username": "mom", "age": 40},
+     {"username": "daddy", "age": 40}
+   ]
+}
+```

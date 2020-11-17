@@ -2,8 +2,16 @@ const express = require('express')
 const app = express()
 const port = 4000
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get('/get', (req, res) => {
+
+  // db connect
+  // db select
+
+  res.json({
+    'username': 'john',
+    'age': 20,
+    'content': ['1', '2', '3', '4']
+  )
 })
 
 app.listen(port, () => {
