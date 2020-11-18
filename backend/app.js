@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const port = 4000
 
-app.get('/get', (req, res) => {
+app.get('/getUser', (req, res) => {
 
   // db connect
   // db select
@@ -11,7 +11,7 @@ app.get('/get', (req, res) => {
     'username': 'john',
     'age': 20,
     'content': ['1', '2', '3', '4']
-  )
+  })
 })
 
 app.listen(port, () => {

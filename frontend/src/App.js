@@ -36,7 +36,7 @@ const App = () => {
       <button onClick={enrollPost}>등록</button>
       <button onClick={resetPost}>초기화</button>
       <button onClick={getUserData}>비동기통신</button>
-
+  
       {
         board.map((item, idx) => {
           return (
